@@ -1,0 +1,26 @@
+package jdbc.desafio;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+import jdbc.FabricaConexao;
+
+public class ConsultarPessoaWhere {
+	public static void main(String[] args) throws SQLException {
+		Connection conexao = FabricaConexao.getConexao();
+		
+		Scanner entrada = new Scanner(System.in);
+		String valor = "";
+		System.out.print("digite o valor: ");
+		valor = entrada.nextLine();
+		
+		String sql = "SELECT * FROM pessoa WHERE nome LIKE ('%"+ valor +"%') ";
+		Statement stmt = conexao.createStatement();
+		
+		
+		entrada.close();
+	}
+
+}

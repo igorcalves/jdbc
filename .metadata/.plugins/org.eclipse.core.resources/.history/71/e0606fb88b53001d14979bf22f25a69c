@@ -1,0 +1,7 @@
+package MinhaImplementacao;
+
+import java.io.Serializable;
+
+public class Pessoa{
+
+}

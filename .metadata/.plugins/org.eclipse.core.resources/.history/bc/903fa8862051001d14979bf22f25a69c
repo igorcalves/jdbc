@@ -1,0 +1,22 @@
+package teste.muitospramuitos;
+
+import Modelo.muitospramuitos.Sobrinho;
+import Modelo.muitospramuitos.Tio;
+
+public class NovoTioSobrinho {
+	
+	public static void main(String[] args) {
+		
+		Tio tia1 = new Tio("Mria");
+		Tio tio2 = new Tio("João");
+		
+		Sobrinho sobrinho1 = new Sobrinho("Davi");
+		Sobrinho sobrinho2 = new Sobrinho("Ana");
+		
+		tia1.getSobrinhos().add(sobrinho1);
+		sobrinho1.getTios().add(tia1);
+		
+		
+	}
+
+}

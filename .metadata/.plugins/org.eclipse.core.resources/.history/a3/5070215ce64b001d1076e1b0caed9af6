@@ -1,0 +1,3 @@
+baanco.url=jdbc:mysql://localhost/curso_java?verifyServerCertificate=false&useSSL=true
+banco.usuario=root
+banco.senha=40446610

@@ -1,0 +1,5 @@
+package Modelo.heranca;
+
+public class Aluno {
+
+}

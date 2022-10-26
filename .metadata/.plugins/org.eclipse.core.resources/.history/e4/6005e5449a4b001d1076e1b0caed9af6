@@ -1,0 +1,33 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class ExcluirPessoa {
+	public static void main(String[] args) throws SQLException {
+		String selectString = "";
+		Scanner entrada = new Scanner(System.in);
+		Connection conexao = FabricaConexao.getConexao();
+		
+		Statement stmt = conexao.createStatement();
+		ResultSet resultado = stmt.executeQuery(selectString);
+		
+		while (resultado.next()) {
+			System.out.println(resultado.getString("nome"));
+		}
+		
+		
+		
+		
+		
+
+		
+		
+		conexao.close();
+		entrada.close();
+		
+	}
+}

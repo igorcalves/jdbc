@@ -1,0 +1,22 @@
+package Modelo.heranca;
+
+import javax.persistence.Entity;
+
+@Entity
+public class AlunoBolsista extends Aluno {
+	
+	private Double valorBolsa;
+
+	
+	public AlunoBolsista() {
+		
+	}
+
+
+	public AlunoBolsista(Long maricula, String nome, Double valorBolsa) {
+		super();
+		this.valorBolsa = valorBolsa;
+	}
+	
+	
+}

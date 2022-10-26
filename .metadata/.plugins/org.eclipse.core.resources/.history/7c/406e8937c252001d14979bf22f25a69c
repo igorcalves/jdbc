@@ -1,0 +1,12 @@
+package teste.consulta;
+
+import Modelo.muitospramuitos.Filme;
+import infra.DAO;
+
+public class obterMediaDosFilmes {
+	
+	public static void main(String[] args) {
+		DAO<Filme> dao = new DAO<>(Filme.class);
+	}
+
+}

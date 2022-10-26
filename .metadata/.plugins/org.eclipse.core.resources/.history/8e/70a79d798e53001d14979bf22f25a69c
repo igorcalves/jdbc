@@ -1,0 +1,10 @@
+package Modelo.heranca;
+
+import javax.persistence.Entity;
+
+@Entity
+public class AlunoBolsista extends Aluno {
+	
+	private Double valorBolsa;
+
+}

@@ -1,0 +1,17 @@
+package jdbc;
+
+public class DAOTeste {
+
+	public static void main(String[] args) {
+		
+		DAO dao = new DAO();
+		
+	String sql = "INSERT INTO pessoas (nome) VALUES (?)";
+	
+	dao.incluir(sql, "luciana da Silva");
+	dao.incluir(sql, "igor da Silva");
+	dao.incluir(sql, "iago da Silva");
+	
+	
+	}
+}
